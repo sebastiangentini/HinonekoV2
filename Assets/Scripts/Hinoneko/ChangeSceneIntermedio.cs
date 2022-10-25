@@ -20,6 +20,6 @@ public class ChangeSceneIntermedio : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 }
