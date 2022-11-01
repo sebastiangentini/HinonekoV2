@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 26.41462, y: -1.2901306, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,10 +57,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 123.5, y: 10}
-      - {x: -32, y: 10}
-      - {x: -35, y: 3}
-      - {x: -35, y: -14}
-      - {x: -18.5, y: -14}
-      - {x: -15, y: -8}
-      - {x: 123.5, y: -8}
+    - - {x: 158.42892, y: 10.659221}
+      - {x: -34.28239, y: 10.157408}
+      - {x: -44.601772, y: 4.731467}
+      - {x: -44.52307, y: -12.504642}
+      - {x: -23.087587, y: -12.329866}
+      - {x: -23.234499, y: -3.645452}
+      - {x: 158.33945, y: -3.2621584}
