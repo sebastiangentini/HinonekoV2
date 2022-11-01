@@ -8,7 +8,11 @@ public class ChangeSceneNivelPrincipal : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collider)
     {
-    SceneManager.LoadScene(2);
+        if (collider.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(2);
+        }
+
     }
 }
 
