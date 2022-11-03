@@ -121,8 +121,8 @@ namespace Platformer.Mechanics
             if (move.x > 0.01f)
                 spriteRenderer.flipX = false;
             else if (move.x < -0.01f)
+                //transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
                 spriteRenderer.flipX = true;
-                // spriteRenderer.transform.Rotate(0f, 180f, 0f);
 
             animator.SetBool("grounded", IsGrounded);
             animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
