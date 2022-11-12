@@ -305,5 +305,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSouls: 9
-  currentSouls: 9
+  currentSouls: 0
   soulBar: {fileID: 0}

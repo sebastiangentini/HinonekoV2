@@ -7,6 +7,9 @@ public class PlayerSouls : MonoBehaviour
 {
     public int maxSouls = 9;
     public int currentSouls;
+    public GameObject particulasAlmas;
+    public GameObject particulasFuego;
+    private bool almasIsActive = false;
 
     public SoulBar soulBar;
 
@@ -18,7 +21,7 @@ public class PlayerSouls : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Souls"))
+        if (other.GetComponent<Jiggler>() != null)
         {
             GainSouls(1);
         }
@@ -28,5 +31,18 @@ public class PlayerSouls : MonoBehaviour
     {
         currentSouls += recharge;
         soulBar.SetSouls(currentSouls);
+        if (!almasIsActive)
+        {
+            particulasAlmas.SetActive(true);
+            almasIsActive = true;
+        }
+        particulasAlmas.transform.localScale *= 1.1f;
+        if (currentSouls >= 9)
+        {
+            Debug.Log("MaxSouls");
+            particulasAlmas.SetActive(false);
+            almasIsActive = false;
+            particulasFuego.SetActive(true);
+        }
     }
 }
