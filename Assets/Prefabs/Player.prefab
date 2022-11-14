@@ -54,11 +54,11 @@ MonoBehaviour:
   minGroundNormalY: 0.9
   gravityModifier: 1
   velocity: {x: 0, y: 0}
-  jumpAudio: {fileID: 8300000, guid: 255cee9f0d5184eb9a05cc5405ff2dc8, type: 3}
+  jumpAudio: {fileID: 0}
   respawnAudio: {fileID: 8300000, guid: 6cb8400e59a804a45ad336b52aefdeac, type: 3}
   ouchAudio: {fileID: 8300000, guid: cf38787bb36c04d92ba1911ab21b6e1f, type: 3}
   maxSpeed: 2.5
-  jumpTakeOffSpeed: 8
+  jumpTakeOffSpeed: 9
   jumpState: 0
   collider2d: {fileID: 0}
   audioSource: {fileID: 0}
@@ -304,6 +304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d3c5a824536e414b905b04e8fc5a8fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSouls: 9
+  maxSouls: 12
   currentSouls: 0
+  particulasAlmas: {fileID: 0}
+  particulasFuego: {fileID: 0}
   soulBar: {fileID: 0}

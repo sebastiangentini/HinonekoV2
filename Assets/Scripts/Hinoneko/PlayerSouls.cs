@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerSouls : MonoBehaviour
 {
-    public int maxSouls = 9;
+    public int maxSouls = 12;
     public int currentSouls;
     public GameObject particulasAlmas;
     public GameObject particulasFuego;
@@ -36,8 +36,8 @@ public class PlayerSouls : MonoBehaviour
             particulasAlmas.SetActive(true);
             almasIsActive = true;
         }
-        particulasAlmas.transform.localScale *= 1.1f;
-        if (currentSouls >= 9)
+        particulasAlmas.transform.localScale *= 1.07f;
+        if (currentSouls >= 12)
         {
             Debug.Log("MaxSouls");
             particulasAlmas.SetActive(false);
