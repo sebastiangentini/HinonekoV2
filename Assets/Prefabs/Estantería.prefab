@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 839386854052773689}
   - component: {fileID: 839386854052773691}
   - component: {fileID: 839386854052773688}
-  - component: {fileID: 7518955464238456156}
+  - component: {fileID: 4119301979528709020}
   m_Layer: 0
   m_Name: "Estanteri\u0301a"
   m_TagString: Untagged
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07668841, y: 0.039792895}
+  m_Offset: {x: -0.07668841, y: 0.1135726}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,9 +110,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.75891, y: 0.19906163}
+  m_Size: {x: 2.75891, y: 0.051502228}
   m_EdgeRadius: 0
---- !u!114 &7518955464238456156
+--- !u!114 &4119301979528709020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +121,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 839386854052773694}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 598cfdc4e661a4336983fda123fc63e6, type: 3}
+  m_Script: {fileID: 11500000, guid: f80571873ce634ee7b05098c95b17344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliderPlatform: {fileID: 0}

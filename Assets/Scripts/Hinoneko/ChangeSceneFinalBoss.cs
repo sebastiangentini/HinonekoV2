@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneFinalBoss : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D other)
     {
-    SceneManager.LoadScene(4);
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(4);
+        }
     }
 }
 
