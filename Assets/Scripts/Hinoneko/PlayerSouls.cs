@@ -9,6 +9,9 @@ public class PlayerSouls : MonoBehaviour
     public int currentSouls;
     public GameObject particulasAlmas;
     public GameObject particulasFuego;
+    public GameObject puertaCasaAbandonada;
+    public Weapon weaponScript;
+
     private bool almasIsActive = false;
 
     public SoulBar soulBar;
@@ -16,7 +19,8 @@ public class PlayerSouls : MonoBehaviour
     void Start()
     {
         currentSouls = 0;
-        soulBar.SetMaxSouls(maxSouls);        
+        soulBar.SetMaxSouls(maxSouls);
+        weaponScript = GetComponent<Weapon>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -43,6 +47,8 @@ public class PlayerSouls : MonoBehaviour
             particulasAlmas.SetActive(false);
             almasIsActive = false;
             particulasFuego.SetActive(true);
+            puertaCasaAbandonada.SetActive(true);
+            weaponScript.enabled = true;
         }
     }
 }
