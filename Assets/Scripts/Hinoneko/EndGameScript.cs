@@ -14,7 +14,7 @@ public class EndGameScript : MonoBehaviour
 
     IEnumerator WaitForEndScene()
     {
-        yield return new WaitForSeconds(36);
+        yield return new WaitForSeconds(51);
         Application.Quit();
     }
 

@@ -14,7 +14,7 @@ public class ChangeSceneIntermedio : MonoBehaviour
 
     IEnumerator WaitForChangeScene()
     {
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(36);
         ChangeScene();
     }
 
