@@ -6,6 +6,7 @@ public class EnemyWeapon : MonoBehaviour
 {
     public GameObject bullet;
     public Transform bulletPosition;
+    public AudioClip shootAudio;
 
     public float timer;
 
@@ -30,5 +31,9 @@ public class EnemyWeapon : MonoBehaviour
     void Shoot()
     {
         Instantiate(bullet, bulletPosition.position, Quaternion.identity);
+        if (shootAudio)
+        {
+            AudioSource.PlayClipAtPoint(shootAudio, transform.position);
+        }
     }
 }

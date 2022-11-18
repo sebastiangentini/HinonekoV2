@@ -435,6 +435,7 @@ MonoBehaviour:
   health: 400
   deathEffect: {fileID: 6670659609126069369, guid: e14229a3edb204d418e09e428aa2532a,
     type: 3}
+  deathAudio: {fileID: 0}
 --- !u!114 &107954858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,6 +450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 5304174489005449063, guid: 3a2d5e46956264cb6b351308dc9f2aa8, type: 3}
   bulletPosition: {fileID: 329694242}
+  shootAudio: {fileID: 0}
   timer: 5
 --- !u!114 &107954859
 MonoBehaviour:
@@ -3053,6 +3055,11 @@ PrefabInstance:
       objectReference: {fileID: 635414851}
     - target: {fileID: 8140866401673567201, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
+      propertyPath: shootAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 0bc1f66a04e1c44c89860e897ac000e8, type: 3}
+    - target: {fileID: 8140866401673567201, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
+        type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 5304174489005449063, guid: b656513436010426890b99878394c3a8,
@@ -4570,6 +4577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 5304174489005449063, guid: 3a2d5e46956264cb6b351308dc9f2aa8, type: 3}
   bulletPosition: {fileID: 1442495289}
+  shootAudio: {fileID: 8300000, guid: 506cacbf8123545e6bd2051ea6fb5427, type: 3}
   timer: 5
 --- !u!1 &1649772975
 GameObject:
@@ -9512,9 +9520,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5353e86a5155c496d86cdb5b7d3b20ae, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 95f2f49df285844c49e999075c0e3c97, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.334
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9721,12 +9729,23 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.39378443
       objectReference: {fileID: 0}
+    - target: {fileID: 5843668731025413174, guid: f158aa2be3df6489185ef721f6fd79c1,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ab43432a82d14418a835a9f9e8fbb1ab, type: 3}
     - target: {fileID: 7823522726213689045, guid: f158aa2be3df6489185ef721f6fd79c1,
         type: 3}
       propertyPath: health
       value: 600
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7823522726213689045, guid: f158aa2be3df6489185ef721f6fd79c1,
+        type: 3}
+      propertyPath: deathAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c968f6b3832848c4a5bbbd9757c8797, type: 3}
+    m_RemovedComponents:
+    - {fileID: 5843668731025413174, guid: f158aa2be3df6489185ef721f6fd79c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f158aa2be3df6489185ef721f6fd79c1, type: 3}
 --- !u!1 &1785932291
 GameObject:
