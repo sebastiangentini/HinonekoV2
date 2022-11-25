@@ -293,3 +293,4 @@ MonoBehaviour:
   health: 100
   deathEffect: {fileID: 6670659609126069369, guid: e14229a3edb204d418e09e428aa2532a,
     type: 3}
+  deathAudio: {fileID: 0}
